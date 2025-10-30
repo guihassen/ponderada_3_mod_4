@@ -1,8 +1,8 @@
-// === Definição dos pinos ===
+
 int ledVermelho = 8;
 int ledAmarelo  = 9;
-int ledVerde    = 7;   // alterado para porta 7
-int buzzer      = 11;  // buzzer na porta 11
+int ledVerde    = 7;   
+int buzzer      = 11;  
 
 
 void acenderLED(int *pino) {
@@ -35,8 +35,8 @@ void setup() {
 void loop() {
   
   acenderLED(&ledVerde);
-  delay(4000);              // permanece 4s
-  avisoBuzzer(&buzzer);     // "bip, bip, bip"
+  delay(4000);              
+  avisoBuzzer(&buzzer);     
   apagarLED(&ledVerde);
 
   
